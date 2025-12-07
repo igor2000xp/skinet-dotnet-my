@@ -212,3 +212,4 @@
 /Volumes/MAC_DOCS/repos/vention/UDEMI/Skinet/skinet-dotnet-my/API/obj/Debug/net10.0/API.pdb
 /Volumes/MAC_DOCS/repos/vention/UDEMI/Skinet/skinet-dotnet-my/API/obj/Debug/net10.0/API.genruntimeconfig.cache
 /Volumes/MAC_DOCS/repos/vention/UDEMI/Skinet/skinet-dotnet-my/API/obj/Debug/net10.0/ref/API.dll
+/Volumes/MAC_DOCS/repos/vention/UDEMI/Skinet/skinet-dotnet-my/API/obj/Debug/net10.0/API.sourcelink.json
