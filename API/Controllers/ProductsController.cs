@@ -22,9 +22,9 @@ public class ProductsController(IProductRepository repo) : ControllerBase
 {
 
     [HttpGet]
-    public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type)
+    public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string? sort)
     {
-        return Ok(await repo.GetProductsAsync(brand, type));
+        return Ok(await repo.GetProductsAsync(brand, type, sort));
         // Implementation to retrieve products
         // return Ok(new[] { "Product1", "Product2" });
     }
