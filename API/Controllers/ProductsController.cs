@@ -6,6 +6,7 @@ using Core.Entities;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Core.Interfaces;
+using Core.Specifications;
 // using System.Linq;
 // using API.RequestHelpers;
 // using Core.Entities;
@@ -24,7 +25,10 @@ public class ProductsController(IGenericRepository<Product> repo) : ControllerBa
     [HttpGet]
     public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string? sort)
     {
-        return Ok(await repo.AllListAsync());
+        var spec = new ProductSpecification(brand, type);
+        var products = await repo.ListAsync(spec);
+
+        return Ok(products);
         // Implementation to retrieve products
         // return Ok(new[] { "Product1", "Product2" });
     }
